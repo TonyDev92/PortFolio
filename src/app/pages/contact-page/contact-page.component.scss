@@ -1,0 +1,117 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85vh;
+    background-color: #0A4D68;
+    &__im{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+        width: 30%;
+        height: 85vh;
+    }
+    &__img{
+        width: 70%;
+        height: 80%;
+        object-fit: cover;
+        margin: 1rem;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px 5px rgba(0, 0, 0, 0.5);;
+    }
+    &__b{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__p{
+            font-family: 'Quantify';
+            width: 100%;
+            color: #00FFCA;
+            text-align: justify;
+            font-size: xx-large;
+        }
+    }
+}
+.btn{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__active{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Quantify';
+        color: #00FFCA;
+        text-decoration: none;
+        border: 1px solid #00FFCA;
+        border-radius: 10px;
+        width: 20%;
+        height: 20%;
+        cursor: pointer;
+        text-align: center;
+    }
+    &__active:hover{
+        background-color: #05BFDB;
+    }
+    
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    &__act{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        padding: 5px;
+        height: 35px;
+        background-color: #088395;
+        border-radius: 5px;
+        color: #00FFCA;
+        text-decoration: none;
+        
+    }
+    &__act:hover{
+        background-color: #05BFDB;
+    }
+    &__act__phone{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        padding: 5px;
+        height: 35px;
+        background-color: #088395;
+        border-radius: 5px;
+        color: #00FFCA;
+        text-decoration: none;
+    }
+    &__act__phone:hover{
+        background-color: #05BFDB;
+    }
+
+}
+
+.imgbtn{
+    width: 100%;
+    max-height: 50px;
+}
+.cnttx{
+    font-family: 'Quantify';
+    font-size: xx-large;
+    margin: 1rem;
+    color: #00FFCA;
+}
+.phone{
+    width: 20%;
+    height: 30px;
+}

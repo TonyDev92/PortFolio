@@ -1,0 +1,199 @@
+.container {
+    width: 100%;
+    height: 85vh;
+    background-color: #0a4d68;
+    display: flex;
+    flex-direction: row;
+    &__desc {
+      display: flex;
+      align-items: center;
+      width: 35%;
+      height: 85vh;
+      text-align: justify;
+      margin-left: 1rem;
+      &__txt {
+        font-family: "Quantify";
+        margin: 1rem;
+        font-size: 20px;
+        color: #00ffca;
+      }
+    }
+  }
+  .galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 85vh;
+    overflow-y: scroll;
+    &__contents {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 70vh;
+      margin-bottom: 2rem;
+      &__ttle{
+        font-family: 'Quantify';
+        color: #00ffca;
+        font-size: xx-large;
+      }
+      &__in {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+      }
+      &__tp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+        width: 90%;
+        gap: 5px;
+      }
+      &__pl{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        padding: 5px;
+        height: 35px;
+        background-color: #088395;
+        border-radius: 5px;
+        font-family: 'Quantify';
+        color: #00FFCA;
+      }
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        cursor: pointer;
+      }
+      &__vd {
+        width: 20%;
+        height: 300px;
+        object-fit: contain;
+      }
+    }
+  }
+  .tech__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    padding: 5px;
+    height: 35px;
+    background-color: #088395;
+    border-radius: 5px;
+  }
+  .link{
+    width: 20px;
+  
+  }
+  .nv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .lnk{
+    color: #05BFDB;
+    font-family: 'Quantify';
+    margin: 10px;
+  }
+  .to{
+    font-family: 'Quantify';
+    text-decoration: none;
+    color: #00ffca;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .to:hover {
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+  }
+  .to:hover {
+    text-decoration: underline;
+  }
+  
+  /*SCROLLBAR STYLE*/
+  .galery::-webkit-scrollbar{
+    width: 5px;
+    height: auto;
+    background-color: #088395;
+  }
+  .galery::-webkit-scrollbar-thumb{
+    background-color: #00ffca;
+    width: 4px;
+    height: 10px;
+  }
+  /* END SCROLLBAR STYLE*/
+  .content__txt{
+    font-family: 'Quantify';
+    font-size: 20px;
+    color: #05BFDB;
+    width: 80%;
+    text-align: center;
+  }
+  /* MODAL */
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    &__img {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      height: 90%;
+      background-color: rgba(0, 0, 0, 0.5);
+      &__in{
+          width: 90%;
+          object-fit: contain;
+      }
+  }
+  
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: baseline;
+      width: 80%;
+      height: auto;
+    }
+    &__btn {
+      padding: 0.5rem 1rem;
+      background-color: #0a4d68;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    &__btn:hover {
+      background-color: #088395;
+    }
+    &__btn:focus{
+      outline: none;
+    }
+    &__btn:active{
+      background-color: #05BFDB;
+    }
+    &__btn:disabled{
+      background-color: #00FFCA;
+      cursor: not-allowed;
+    }
+  }
+  /* END MODAL*/
+  

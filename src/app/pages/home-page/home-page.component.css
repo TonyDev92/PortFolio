@@ -1,0 +1,90 @@
+@keyframes wipe-cinematic-in {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-clip-path: inset(0 0 50% 0);
+            clip-path: inset(0 0 50% 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+    background-color: #0A4D68;
+  }
+}
+.home {
+  background-color: #0A4D68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 85vh;
+}
+.home__title {
+  width: 90%;
+  font-size: 7rem;
+  margin-left: 1rem;
+  font-family: "Quantify";
+}
+.home__title__a {
+  background-image: url(../../../assets/city.png);
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-background-clip: text;
+          background-clip: text;
+  --wekit-background-clip: text;
+  color: transparent;
+  text-align: justify;
+  animation: moveBackground 50s linear infinite;
+  font-size: 200px;
+}
+.home__title__b {
+  font-size: 30px;
+  color: #00FFCA;
+  font-family: "Madinah";
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.content {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.content__p {
+  font-family: "Quantify";
+  color: #05BFDB;
+  width: 80%;
+  text-align: start;
+  margin-left: 1rem;
+  font-size: x-large;
+}
+
+.btn {
+  width: 30%;
+  margin-left: 3rem;
+}
+.btn__active {
+  background-color: transparent;
+  font-family: "Quantify";
+  color: #00FFCA;
+  border: 1px solid #00FFCA;
+  border-radius: 10px;
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+}
+.btn__active:hover {
+  background-color: #05BFDB;
+}/*# sourceMappingURL=home-page.component.css.map */

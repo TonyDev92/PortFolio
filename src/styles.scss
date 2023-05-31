@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Miracle';
+    src: url('./assets/fonts/Miracle\ Personal\ use.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quantify';
+    src: url('./assets/fonts/Quantify.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Madinah';
+    src: url('./assets/fonts/Madinah\ Authentic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

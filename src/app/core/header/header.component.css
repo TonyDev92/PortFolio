@@ -1,0 +1,91 @@
+.head {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0a4d68;
+}
+
+.logo {
+  margin-left: 1rem;
+  display: inline-block;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  font-family: "Quantify";
+}
+
+.logo .letter {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+.logo .letter:first-child {
+  margin-right: 20px;
+}
+
+.logo .letter:last-child {
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 2px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #fff;
+  }
+  100% {
+    box-shadow: 0 0 2px #fff;
+  }
+}
+.nv {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  background-color: #088395;
+}
+.nv__in {
+  color: #fff;
+  width: 15%;
+  font-family: sans-serif;
+  text-decoration: overline;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family: "Miracle";
+  font-size: large;
+  position: relative;
+}
+
+.nv__in:focus {
+  color: #00ffca;
+}
+
+.nv__in::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to left, transparent, #00ffca);
+  background-position: right;
+  background-repeat: no-repeat;
+  transition: left 0.3s ease;
+}
+
+.nv__in:focus::before {
+  left: 0;
+}/*# sourceMappingURL=header.component.css.map */
