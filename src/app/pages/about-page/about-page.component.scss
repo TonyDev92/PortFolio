@@ -8,11 +8,11 @@
         font-family: 'Madinah';
         color: #00FFCA;
         text-align: center;
+        margin-top: 1rem;
     }
     &__container{
         display: flex;
         flex-direction: row;
-
     }
     &__txt{
         font-family: 'Quantify';
@@ -21,12 +21,22 @@
         text-align: justify;
         font-size: 22px;
         margin: 1rem;
+        &__in{
+            margin: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__img{
         width: 20%;
+        height: 71vh;
+        margin-left: 1rem;
         &__cnt{
             width: 100%;
-            object-fit: fill;
+            height: 100%;
+            object-fit: cover;
     }
     }
 }
